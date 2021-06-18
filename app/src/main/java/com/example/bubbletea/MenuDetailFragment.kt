@@ -6,44 +6,33 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.bubbletea.data.Datasource
-import com.example.bubbletea.databinding.FragmentMenuBinding
+import com.example.bubbletea.databinding.FragmentMenuDetailBinding
 import com.example.bubbletea.model.ViewModel
 
 
-class MenuFragment : Fragment() {
+class MenuDetailFragment : Fragment() {
 
-    private var binding : FragmentMenuBinding? = null
+    private var binding : FragmentMenuDetailBinding? = null
     private val sharedViewModel : ViewModel by activityViewModels()
-
-    private lateinit var recyclerView : RecyclerView
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val fragmentBinding = FragmentMenuBinding.inflate(inflater, container, false)
+        val fragmentBinding = FragmentMenuDetailBinding.inflate(inflater, container, false)
         binding = fragmentBinding
         return fragmentBinding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding?.menuFragment = this
-        recyclerView = binding!!.recyclerView
-        setLayout()
+        binding?.menuDetailFragment = this
 
 
 
-    }
-
-    private fun setLayout(){
-        recyclerView.layoutManager = LinearLayoutManager(requireContext())
-        recyclerView.adapter = MenuFragmentAdapter(Datasource().loadMenuList(), requireContext())
 
     }
+
+
 }
