@@ -7,6 +7,9 @@
         <variable
             name="menuFragment"
             type="com.example.bubbletea.MenuFragment" />
+        <variable
+            name="menuFragmentAdapter"
+            type="com.example.bubbletea.MenuFragmentAdapter" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

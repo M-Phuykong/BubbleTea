@@ -38,7 +38,6 @@ class MenuFragment : Fragment() {
         setLayout()
 
 
-
     }
 
     private fun setLayout(){

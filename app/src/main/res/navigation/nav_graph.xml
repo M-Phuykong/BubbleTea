@@ -16,5 +16,19 @@
     <fragment
         android:id="@+id/menuFragment"
         android:name="com.example.bubbletea.MenuFragment"
-        android:label="MenuFragment" />
+        android:label="MenuFragment"
+        tools:layout="@layout/fragment_menu">
+        <action
+            android:id="@+id/action_menuFragment_to_menuDetailFragment"
+            app:destination="@id/menuDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuDetailFragment"
+        android:name="com.example.bubbletea.MenuDetailFragment"
+        android:label="MenuDetailFragment"
+        tools:layout="@layout/fragment_menu_detail">
+        <argument
+            android:name="productName"
+            app:argType="string" />
+    </fragment>
 </navigation>
