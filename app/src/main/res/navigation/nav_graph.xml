@@ -30,5 +30,17 @@
         <argument
             android:name="productName"
             app:argType="string" />
+        <argument android:name="productPrice" />
+        <argument
+            android:name="ProductImageInt"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_menuDetailFragment_to_dateAndAddress"
+            app:destination="@id/dateAndAddress" />
     </fragment>
+    <fragment
+        android:id="@+id/dateAndAddress"
+        android:name="com.example.bubbletea.DateAndAddress"
+        android:label="DateAndAddress"
+        tools:layout="@layout/fragment_date_and_address"/>
 </navigation>

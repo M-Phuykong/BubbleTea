@@ -45,4 +45,11 @@ class MenuFragment : Fragment() {
         recyclerView.adapter = MenuFragmentAdapter(Datasource().loadMenuList(), requireContext())
 
     }
+
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        binding = null
+
+    }
 }

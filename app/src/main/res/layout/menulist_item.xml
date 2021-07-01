@@ -15,7 +15,7 @@
         app:strokeColor="@color/stroke_color"
         app:cardPreventCornerOverlap="true"
         app:cardCornerRadius="7dp"
-        app:cardElevation="0dp"
+        app:cardElevation="4dp"
         android:layout_width="match_parent"
         android:layout_height="148dp"
         android:layout_margin="@dimen/DefaultMobile_CardMargin">
@@ -59,15 +59,16 @@
 
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/addToCart_FloatingButton"
+                    android:id="@+id/addFloatingButton"
                     app:fabSize="mini"
                     android:backgroundTint="@color/white"
-                    app:borderWidth="0dp"
+                    app:borderWidth="0.5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentEnd="true"
                     android:layout_margin="2dp"
+                    app:elevation="0dp"
                     app:srcCompat="@drawable/ic_add_24"/>
 
             </RelativeLayout>
