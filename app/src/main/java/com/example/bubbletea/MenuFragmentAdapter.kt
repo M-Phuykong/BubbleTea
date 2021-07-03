@@ -21,7 +21,7 @@ class MenuFragmentAdapter(
 ) :
     RecyclerView.Adapter<MenuFragmentAdapter.MenuFragmentHolder>() {
 
-    private var productImageInt : Int = 0
+
 
     class MenuFragmentHolder(val view: View) : RecyclerView.ViewHolder(view) {
         var productNameTextView: TextView = view.findViewById(R.id.productName)
@@ -45,6 +45,7 @@ class MenuFragmentAdapter(
             LayoutInflater.from(parent.context).inflate(R.layout.menulist_item, parent, false)
 
         adapterLayout.setOnClickListener {
+            
 
         }
 
@@ -55,10 +56,10 @@ class MenuFragmentAdapter(
 
     override fun onBindViewHolder(holder: MenuFragmentHolder, position: Int) {
         val item = dateset[position]
-
         holder.productNameTextView.text = item.productName
         holder.productPriceTextView.text = item.productPrice.toString()
         holder.productImageImageView.setImageResource(item.productImage)
+
 
 
 
@@ -87,7 +88,7 @@ class MenuFragmentAdapter(
 
         //Arg from SafeArg Plug
         val action =
-            MenuFragmentDirections.actionMenuFragmentToMenuDetailFragment(holder.productNameTextView.text.toString(), holder.productPriceTextView.text.toString(), productImageInt)
+            MenuFragmentDirections.actionMenuFragmentToMenuDetailFragment(holder.productNameTextView.text.toString(), holder.productPriceTextView.text.toString(), holder.adapterPosition)
 
         holder.view.findNavController().navigate(action)
 
