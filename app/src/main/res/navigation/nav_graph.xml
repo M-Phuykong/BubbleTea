@@ -28,11 +28,7 @@
         android:label="MenuDetailFragment"
         tools:layout="@layout/fragment_menu_detail">
         <argument
-            android:name="productName"
-            app:argType="string" />
-        <argument android:name="productPrice" />
-        <argument
-            android:name="ProductImageInt"
+            android:name="ProductPos"
             app:argType="integer" />
         <action
             android:id="@+id/action_menuDetailFragment_to_dateAndAddress"

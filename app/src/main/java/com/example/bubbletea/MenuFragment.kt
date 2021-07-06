@@ -33,7 +33,12 @@ class MenuFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding?.menuFragment = this
+
+        binding?.apply {
+            menuFragment = this@MenuFragment
+            lifecycleOwner = viewLifecycleOwner
+        }
+
         recyclerView = binding!!.recyclerView
         setLayout()
 
@@ -43,6 +48,7 @@ class MenuFragment : Fragment() {
     private fun setLayout(){
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
         recyclerView.adapter = MenuFragmentAdapter(Datasource().loadMenuList(), requireContext())
+
 
     }
 

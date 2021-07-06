@@ -3,4 +3,5 @@
     <dimen name="MenuCard_Top_Margin">4dp</dimen>
     <dimen name="DefaultMobile_CardMargin">6dp</dimen>
     <dimen name="InsideCard_Margin">12dp</dimen>
+    <dimen name="Menu_TitleSize">18sp</dimen>
 </resources>

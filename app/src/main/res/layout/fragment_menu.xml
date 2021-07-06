@@ -7,9 +7,6 @@
         <variable
             name="menuFragment"
             type="com.example.bubbletea.MenuFragment" />
-        <variable
-            name="menuFragmentAdapter"
-            type="com.example.bubbletea.MenuFragmentAdapter" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -61,8 +58,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_view"

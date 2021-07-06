@@ -2,7 +2,15 @@
     <string name="app_name">BubbleTea</string>
 
     <string name="product_image">Product Image</string>
-    <string name="addToCart">Add To Cart | $5.50</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="addToCart_Price">Add To Cart | %s</string>
+    <string name="price">%s</string>
+
+    <string name="bubbleTea_A">Bubble Tea A</string>
+    <string name="bubbleTea_B">Bubble Tea B</string>
+    <string name="bubbleTea_C">Bubble Tea C</string>
+    <string name="bubbleTea_D">Bubble Tea D</string>
+    <string name="bubbleTea_E">Bubble Tea E</string>
+    <string name="bubbleTea_F">Bubble Tea F</string>
+
+
 </resources>
