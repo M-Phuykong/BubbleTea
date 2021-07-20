@@ -16,7 +16,7 @@
 
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
-            android:layout_height="152dp"
+            android:layout_height="250dp"
             android:fitsSystemWindows="true">
 
             <com.google.android.material.appbar.CollapsingToolbarLayout
@@ -27,7 +27,7 @@
                 app:expandedTitleMarginBottom="28dp"
                 app:expandedTitleMarginStart="72dp"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
-                app:statusBarScrim="?attr/colorPrimaryVariant"
+                app:statusBarScrim="?attr/colorPrimary"
                 app:expandedTitleTextAppearance="@style/TextAppearance.App.CollapsingToolbar.Expanded"
                 app:collapsedTitleTextAppearance="@style/TextAppearance.App.CollapsingToolbar.Collapsed">
 
@@ -61,9 +61,11 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_view"
-                android:padding="16dp"
+                android:padding="5dp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                tools:listitem="@layout/menulist_item"
+                tools:itemCount="2">
 
             </androidx.recyclerview.widget.RecyclerView>
 

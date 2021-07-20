@@ -4,4 +4,5 @@
     <dimen name="DefaultMobile_CardMargin">6dp</dimen>
     <dimen name="InsideCard_Margin">12dp</dimen>
     <dimen name="Menu_TitleSize">18sp</dimen>
+    <dimen name="Text_Padding">4dp</dimen>
 </resources>

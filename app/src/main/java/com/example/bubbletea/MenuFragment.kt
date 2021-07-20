@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.bubbletea.adapter.MenuFragmentAdapter
 import com.example.bubbletea.data.Datasource
 import com.example.bubbletea.databinding.FragmentMenuBinding
 import com.example.bubbletea.model.ViewModel

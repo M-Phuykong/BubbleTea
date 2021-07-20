@@ -1,4 +1,4 @@
-package com.example.bubbletea
+package com.example.bubbletea.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -9,8 +9,11 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.example.bubbletea.MenuFragmentDirections
+import com.example.bubbletea.R
 import com.example.bubbletea.model.MenuList
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import java.text.NumberFormat
 
 class MenuFragmentAdapter(
     private val dateset: List<MenuList>,
@@ -37,7 +40,7 @@ class MenuFragmentAdapter(
     override fun onBindViewHolder(holder: MenuFragmentHolder, position: Int) {
         val item = dateset[position]
         holder.productNameTextView.text = context.getString(item.productName)
-        holder.productPriceTextView.text = item.productPrice.toString()
+        holder.productPriceTextView.text = context.getString(R.string.price, NumberFormat.getCurrencyInstance().format(item.productPrice))
         holder.productImageImageView.setImageResource(item.productImage)
         holder.menuCard.setOnClickListener { movetoDetailMenu(holder) }
         holder.addProduct.setOnClickListener { movetoDetailMenu(holder) }
